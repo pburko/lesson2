@@ -37,8 +37,8 @@ public class Main {
 //РЕШЕНИЕ
         System.out.println("Задача №3");
         String elem_A = new String("");
-        for(int i=0; i<60; i+=6){
-            elem_A = elem_A + i +  " ";
+        for(int a=0; a<60; a+=6){
+            elem_A = elem_A + a +  " ";
         }
         System.out.println("Арифметическая последовательность элементов А: " + elem_A);
 
