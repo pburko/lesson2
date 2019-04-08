@@ -13,15 +13,15 @@ public class Main {
         x = x * 2;
 
         if (x > 20) {
-            System.out.println("Результат 'x' т.к. 20 > " + x );
+            System.out.println("Результат 'x' т.к. " + x + " > 20 ");
         }
         else if (x < 20) {
-            System.out.println("Результат '-x' т.к. 20 < " + x );
+            System.out.println("Результат '-x' т.к. " + x + " < 20 ");
         }
         else {
-            System.out.println("Результат '0' т.к. 20 = " + x );
+            System.out.println("Результат '0' т.к. " + x + " = 20 ");
         }
-
+        System.out.println("");
 //----------
 //ЗАДАЧА №2
  //* 15 раз вывести на экран фразу «Это X-я строка», где вместо Х будет стоять порядковый номер строки. Начинаем счет строк с единицы.
@@ -30,18 +30,26 @@ public class Main {
        for(int i=1; i <16; i++){
            System.out.println("Это " + i + "-я строка");
        }
-
+        System.out.println("");
 //----------
 //ЗАДАЧА №3
 /*Есть переменная A. Вывести в консоль арифметическую последовательность, состоящую из А элементов, начиная с нуля, где каждый следующий элемент на А больше.*/
-//РЕШЕНИЕ
-        System.out.println("Задача №3");
-        String elem_A = new String("");
+//РЕШЕНИЕ №1
+        System.out.println("Задача №3. Вариант №1");
         for(int a=0; a<60; a+=6){
-            elem_A = elem_A + a +  " ";
+            System.out.print(a + " ");
         }
-        System.out.println("Арифметическая последовательность элементов А: " + elem_A);
-
+        System.out.println("");
+//РЕШЕНИЕ №2
+        System.out.println("Задача №3. Вариант №2");
+        int a=0;
+        String elem_A = new String("");
+        for(int i=0; i<10; i++){
+            elem_A = elem_A + a +  " ";
+            a=a+6;
+        }
+        System.out.println(elem_A);
+        System.out.println("");
 //----------
 //ЗАДАЧА №4
 /*Вывести на экран таблицу умножения для чисел от 2 до 9 в виде таблицы
@@ -54,7 +62,12 @@ public class Main {
 И так далее…*/
 //РЕШЕНИЕ
         System.out.println("Задача №4");
-
+        for(int i = 2; i < 10; i++){
+            for(int k = 1; k < 10; k++){
+                System.out.print(k * i + "  ");
+            }
+            System.out.println("");
+        }
 //----------
 
 
