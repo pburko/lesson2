@@ -55,10 +55,12 @@ public class Product {
 
     @Override
     public String toString() {
-        System.out.println("--------------------------------------------------------------------------------------");
-        return "| " + Main.padString(name, 13) + "| " +  amount +
-                      Main.padString(units.toString(), 7) + "| " +
-                      Main.padString(freshStatus.toString(),9) + "| " +
+        Main.LINE();
+        return "| " + Main.padString(name, 13) + "| " +
+                      Main.padString(amount.toString(),3) + " " +
+                      Main.padString(units.toString(), 5) + "| " +
+                      Main.padString(freshStatus.toString(),12) + "| " +
                       Main.padString(validDate,13) + "| " + category;
     }
+
 }
