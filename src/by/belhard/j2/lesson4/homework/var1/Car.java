@@ -1,4 +1,4 @@
-package by.belhard.j2.lesson4.homework;
+package by.belhard.j2.lesson4.homework.var1;
 
 public class Car {
     private String Name;
