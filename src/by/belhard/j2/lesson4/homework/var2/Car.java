@@ -24,6 +24,8 @@ public class Car {
         this.distance += distance;
         this.coordinates = point;
         return distance;
+
+
     }
 
     public double move(double x, double y) {

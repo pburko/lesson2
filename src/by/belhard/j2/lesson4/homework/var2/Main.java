@@ -15,6 +15,7 @@ public class Main {
         Car car2 = new Car("ZAZ", 0, 0);
         car2.move(car1.getCoordinates());
         System.out.println(car2);
+
     }
 
 }

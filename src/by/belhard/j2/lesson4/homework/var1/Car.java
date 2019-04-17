@@ -11,6 +11,7 @@ public class Car {
         this.x1 = x1;
         this.y1 = y1;
         this.distance = distance;
+
     }
 
     public String getName() {
